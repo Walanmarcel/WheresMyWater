@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="obc-ZP-lyu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Where's my water?-->
+        <scene sceneID="lNC-Rw-8IV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w0W-wb-A1t" customClass="MapViewController" customModule="Water_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="9G1-hf-WeP"/>
+                        <viewControllerLayoutGuide type="bottom" id="dzo-5B-PZn"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="TF0-Jv-td0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dMT-Mm-ecB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dMT-Mm-ecB" firstAttribute="top" secondItem="TF0-Jv-td0" secondAttribute="topMargin" id="5wA-mx-VOm"/>
+                            <constraint firstItem="dzo-5B-PZn" firstAttribute="top" secondItem="dMT-Mm-ecB" secondAttribute="bottom" id="RYv-9n-6Lz"/>
+                            <constraint firstItem="dMT-Mm-ecB" firstAttribute="leading" secondItem="TF0-Jv-td0" secondAttribute="leadingMargin" constant="-20" id="T7F-pk-JSh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dMT-Mm-ecB" secondAttribute="trailing" constant="-20" id="xUB-vd-lI0"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Where's my water?" id="nZh-4J-fxz"/>
+                    <connections>
+                        <outlet property="mapView" destination="dMT-Mm-ecB" id="3N0-hX-HIY"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MST-hy-hf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="860" y="212"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jc4-oz-pk9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="obc-ZP-lyu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ce-2S-kcP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w0W-wb-A1t" kind="relationship" relationship="rootViewController" id="WIo-gl-98A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOh-7e-oEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="212"/>
         </scene>
     </scenes>
 </document>

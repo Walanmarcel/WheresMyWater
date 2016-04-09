@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA33C2F71CB979C40079BF3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA33C2F61CB979C40079BF3E /* MapKit.framework */; };
 		EA3C13ED1CB9514600497929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C13EC1CB9514600497929 /* AppDelegate.swift */; };
-		EA3C13EF1CB9514600497929 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C13EE1CB9514600497929 /* ViewController.swift */; };
 		EA3C13F21CB9514600497929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3C13F01CB9514600497929 /* Main.storyboard */; };
 		EA3C13F51CB9514600497929 /* Water_Finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA3C13F31CB9514600497929 /* Water_Finder.xcdatamodeld */; };
 		EA3C13F71CB9514600497929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3C13F61CB9514600497929 /* Assets.xcassets */; };
 		EA3C13FA1CB9514600497929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3C13F81CB9514600497929 /* LaunchScreen.storyboard */; };
+		EA3C14021CB9546500497929 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C14011CB9546500497929 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA33C2F61CB979C40079BF3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA3C13E91CB9514600497929 /* Water Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Water Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3C13EC1CB9514600497929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA3C13EE1CB9514600497929 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA3C13F11CB9514600497929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA3C13F41CB9514600497929 /* Water_Finder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Water_Finder.xcdatamodel; sourceTree = "<group>"; };
 		EA3C13F61CB9514600497929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA3C13F91CB9514600497929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA3C13FB1CB9514600497929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3C14011CB9546500497929 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA33C2F71CB979C40079BF3E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 		EA3C13E01CB9514600497929 = {
 			isa = PBXGroup;
 			children = (
+				EA33C2F61CB979C40079BF3E /* MapKit.framework */,
 				EA3C13EB1CB9514600497929 /* Water Finder */,
 				EA3C13EA1CB9514600497929 /* Products */,
 			);
@@ -57,12 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				EA3C13EC1CB9514600497929 /* AppDelegate.swift */,
-				EA3C13EE1CB9514600497929 /* ViewController.swift */,
 				EA3C13F01CB9514600497929 /* Main.storyboard */,
 				EA3C13F61CB9514600497929 /* Assets.xcassets */,
 				EA3C13F81CB9514600497929 /* LaunchScreen.storyboard */,
 				EA3C13FB1CB9514600497929 /* Info.plist */,
 				EA3C13F31CB9514600497929 /* Water_Finder.xcdatamodeld */,
+				EA3C14011CB9546500497929 /* MapViewController.swift */,
 			);
 			path = "Water Finder";
 			sourceTree = "<group>";
@@ -140,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3C13F51CB9514600497929 /* Water_Finder.xcdatamodeld in Sources */,
-				EA3C13EF1CB9514600497929 /* ViewController.swift in Sources */,
+				EA3C14021CB9546500497929 /* MapViewController.swift in Sources */,
 				EA3C13ED1CB9514600497929 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +295,7 @@
 				EA3C14001CB9514600497929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
